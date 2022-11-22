@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* scale id #canvas of the game with scale to fit the screen */
+#canvas {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: -1;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  background-color: #070606;
+}
+
+header {
+  margin: 0 auto;
+  width: 431px;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  background: url('../assets/flappy-bird-set.png') 0% 340px;
+  padding: 1.2rem 0;
+  margin: 0;
+}
+
+#score-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  background-color: rgb(54, 236, 54);
+  z-index: 2;
+}
